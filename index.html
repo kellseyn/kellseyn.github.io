@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Portfolio/Resume</title>
@@ -9,6 +9,20 @@
 </head>
 <body>
     <div class="main landing">
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <h4 class="text-white">Welcome,</h4>
+                    <span class="text-white">To the portfolio of</span>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="png/kellsLurk_112.png" class="toggle-icon" alt="">
+                </button>
+                <div class="name"><em>KELLSEY NEAGLEY</em></div>
+            </nav>
+        </div>
         <div class="header">
             <div class="text-box">
                 <h1 class="heading-primary">
@@ -20,13 +34,16 @@
                                 <span>Cross Stitcher</span>
                             </div>
                             <div class="carousel-item">
-                                <span>Twitch streamer</span>
+                                <span>Twitch Streamer</span>
                             </div>
                             <div class="carousel-item">
-                                <span>Loving wife</span>
+                                <span>Loving Spouse</span>
                             </div>
                             <div class="carousel-item">
                                 <span>Web Developer</span>
+                            </div>
+                            <div class="carousel-item">
+                                <span>Job Seeker</span>
                             </div>
                         </div>
                         <a class="carousel-control-prev invisible" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -41,15 +58,79 @@
                 </h1>
             </div>
         </div>
-        <div class="header-sub-section">
-            <div class="about-me">
-                <button type="button" class="btn btn-primary" id="button-one">About Me:</button>
-                    <ul class="button-one-list">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link btn-secondary btn-lg btn-block text-white" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <i class="fas fa-address-card"> About Me: </i>
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        I'm a job seeker and I'm interested in learning new code daily
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link btn-secondary btn-lg btn-block collapsed text-white" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="fas fa-laptop-code"> Development Projects:</i>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li>Coffee Project</li>
+                            <li>Weather App</li>
+                            <li>Candy Monster Game</li>
+                        </ul>
+                    </div>
+                </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link btn-lg btn-block btn-secondary collapsed text-white" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="fas fa-terminal"> My Skills:</i>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>Bootstrap</li>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                            <li>MySQL</li>
+                            <li>Spring Boot</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card .bg-gradient-secondary">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link btn-secondary btn-lg btn-block collapsed text-white" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <i class="fas fa-address-book"> Contact Me:</i>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li>Email: kellseyneagley@gmail.com</li>
+                            <li>LinkedIn: <a href="https://wwww.linkedin.com/in/kellseyneagley/">linkedin.com/in/kellseyneagley/</a></li>
+                            <li>Github: <a href="https://www.github.com/kellseyn">github.com/kellseyn</a></li>
+                            <li>Cell: (210) 381-0439</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
